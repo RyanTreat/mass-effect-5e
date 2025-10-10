@@ -348,7 +348,7 @@ Hooks.once("init", () => {
 	  img: "modules/mass-effect-5e/assets/icons/pcold.svg",
 	  reference: "Compendium.world.journals.JournalEntry.CxVLbrQKzQ9TVjhr.JournalEntryPage.bA4tUUWDD9W0KkcH",
 	  pseudo: false,
-	  statuses: ["incapacitated"]
+	  statuses: [""]
 	};
 	
 	CONFIG.DND5E.conditionTypes.pfire = {
@@ -356,7 +356,7 @@ Hooks.once("init", () => {
 	  img: "modules/mass-effect-5e/assets/icons/pfire.svg",
 	  reference: "Compendium.world.journals.JournalEntry.CxVLbrQKzQ9TVjhr.JournalEntryPage.x0O7UvbkK0CP8Y6m",
 	  pseudo: false,
-	  statuses: ["incapacitated"]
+	  statuses: [""]
 	};
 	
 	CONFIG.DND5E.conditionTypes.pforce = {
@@ -364,7 +364,7 @@ Hooks.once("init", () => {
 	  img: "modules/mass-effect-5e/assets/icons/pforce.svg",
 	  reference: "Compendium.world.journals.JournalEntry.CxVLbrQKzQ9TVjhr.JournalEntryPage.wD28HUD1g2STaTB1",
 	  pseudo: false,
-	  statuses: ["incapacitated"]
+	  statuses: [""]
 	};
 	
 	CONFIG.DND5E.conditionTypes.plightning = {
@@ -372,7 +372,7 @@ Hooks.once("init", () => {
 	  img: "modules/mass-effect-5e/assets/icons/plightning.svg",
 	  reference: "Compendium.world.journals.JournalEntry.CxVLbrQKzQ9TVjhr.JournalEntryPage.juzBx97rjwqXLSIY",
 	  pseudo: false,
-	  statuses: ["incapacitated"]
+	  statuses: [""]
 	};
 	
 	CONFIG.DND5E.conditionTypes.pnecrotic = {
@@ -380,7 +380,7 @@ Hooks.once("init", () => {
 	  img: "modules/mass-effect-5e/assets/icons/pnecrotic.svg",
 	  reference: "Compendium.world.journals.JournalEntry.CxVLbrQKzQ9TVjhr.JournalEntryPage.apVuR8NpS4tCt3za",
 	  pseudo: false,
-	  statuses: ["incapacitated"]
+	  statuses: [""]
 	};
 	
 	CONFIG.DND5E.conditionTypes.pradiant = {
@@ -388,7 +388,7 @@ Hooks.once("init", () => {
 	  img: "modules/mass-effect-5e/assets/icons/pradiant.svg",
 	  reference: "Compendium.world.journals.JournalEntry.CxVLbrQKzQ9TVjhr.JournalEntryPage.qexa4XoQ8DEhFUAA",
 	  pseudo: false,
-	  statuses: ["incapacitated"]
+	  statuses: [""]
 	};
 	
 	
