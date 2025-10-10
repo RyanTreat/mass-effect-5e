@@ -1,0 +1,294 @@
+{
+  "id": "mass-effect-5e",
+  "title": "Mass Effect 5e Refined",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13"
+  },
+  "description": "Modifications to 5e for the N7.World system",
+  "authors": [
+    {
+      "name": "Caleb Scrivner",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "src/me5eTEST.js"
+  ],
+  "styles": [
+    "me5e.css"
+  ],
+  "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json",
+            "flags": {}
+        }
+  ],
+  "packs": [
+    {
+      "name": "backgrounds-me5e-r",
+      "label": "Backgrounds (ME5e R)",
+      "path": "packs/backgrounds-me5e-r",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
+    },
+    {
+      "name": "bestiary-me5e-r",
+      "label": "Bestiary (ME5e R)",
+      "path": "packs/bestiary-me5e-r",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "class-features-me5e-r",
+      "label": "Class Features (ME5e R)",
+      "path": "packs/class-features-me5e-r",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "classes-me5e-r",
+      "label": "Classes (ME5e R)",
+      "path": "packs/classes-me5e-r",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "feats-me5e-r",
+      "label": "Feats (ME5e R)",
+      "path": "packs/feats-me5e-r",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "item-armor-me5e-r",
+      "label": "Item Armor (ME5e R)",
+      "path": "packs/item-armor-me5e-r",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "item-gear-me5e-r",
+      "label": "Item Gear (ME5e R)",
+      "path": "packs/item-gear-me5e-r",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "item-mods-me5e-r",
+      "label": "Item Mods (ME5e R)",
+      "path": "packs/item-mods-me5e-r",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "item-weapons-me5e-r",
+      "label": "Item Weapons (ME5e R)",
+      "path": "packs/item-weapons-me5e-r",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "me5e-r-rolltables",
+      "label": "ME5e R RollTables",
+      "path": "packs/me5e-r-rolltables",
+      "type": "RollTable",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "me5e-r-rules",
+      "label": "ME5e R Rules",
+      "path": "packs/me5e-r-rules",
+      "type": "JournalEntry",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "powers-me5e-r",
+      "label": "Powers (ME5e R)",
+      "path": "packs/powers-me5e-r",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "racial-features-me5e-r",
+      "label": "Racial Features (ME5e R)",
+      "path": "packs/racial-features-me5e-r",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "species-me5e-r",
+      "label": "Species (ME5e R)",
+      "path": "packs/species-me5e-r",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "subclasses-me5e-r",
+      "label": "Subclasses (ME5e R)",
+      "path": "packs/subclasses-me5e-r",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "vehicle-system-actions-me5e-r",
+      "label": "Vehicle System Actions (ME5e R)",
+      "path": "packs/vehicle-system-actions-me5e-r",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "weapon-properties-me5e-r",
+      "label": "Weapon Properties (ME5e R)",
+      "path": "packs/weapon-properties-me5e-r",
+      "type": "JournalEntry",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "vehicles-me5e-r",
+      "label": "Vehicles (ME5e R)",
+      "path": "packs/vehicles-me5e-r",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    }
+  ],
+  "packFolders": [
+    {
+        "name": "ME5e Refined Content",
+        "sorting": "m",
+        "color": "#0007db",
+        "packs": [
+            "bestiary-me5e-r",
+            "me5e-r-rolltables",
+            "me5e-r-rules"
+        ],
+        "folders": [
+            {
+                "name": "Character Creation",
+                "sorting": "a",
+                "packs": ["backgrounds-me5e-r", "feats-me5e-r", "powers-me5e-r"],
+                "folders": [
+                    {
+                        "name": "Class",
+                        "sorting": "a",
+                        "packs": ["classes-me5e-r", "class-features-me5e-r", "subclasses-me5e-r"]
+                    },
+                    {
+                        "name": "Species",
+                        "sorting": "a",
+                        "packs": ["species-me5e-r", "racial-features-me5e-r"]
+                    }                     
+                ]
+            },
+            {
+                "name": "Items",
+                "sorting": "a",
+                "packs": [
+                    "item-armor-me5e-r",
+                    "item-gear-me5e-r",
+                    "item-mods-me5e-r",
+                    "item-weapons-me5e-r",
+                    "weapon-properties-me5e-r"]
+            },
+            {
+                "name": "Vehicles",
+                "sorting": "a",
+                "packs": ["vehicles-me5e-r", "vehicle-system-actions-me5e-r"]
+            }
+        ]
+    }
+  ]
+
+}

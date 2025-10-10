@@ -1,0 +1,15 @@
+{
+    "ME5E.Item": {
+        "Category": {
+        "Label": "Category",
+        "Physical": "Physical"
+        },
+        "Property": {
+            "Arc": "Arc",
+            "burstfire" : "Burst Fire",
+            "doubletap" : "Double Tap",
+            "Heat" : "Heat",
+            "Ammunition": "Ammunition"
+        }
+    }
+}
