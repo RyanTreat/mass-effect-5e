@@ -1,15 +1,37 @@
 {
-    "ME5E.Item": {
-        "Category": {
-        "Label": "Category",
-        "Physical": "Physical"
-        },
-        "Property": {
-            "Arc": "Arc",
-            "burstfire" : "Burst Fire",
-            "doubletap" : "Double Tap",
-            "Heat" : "Heat",
-            "Ammunition": "Ammunition"
-        }
+  "ME5E.Item": {
+    "Category": {
+      "Label": "Category",
+      "Physical": "Physical"
+    },
+    "Property": {
+      "Arc": "Arc",
+      "burstfire": "Burst Fire",
+      "doubletap": "Double Tap",
+      "Heat": "Heat",
+      "Ammunition": "Ammunition"
     }
+  },
+  "DND5E.Currency": "Currency", 
+  "DND5E.CurrencyAbbrCP": "cp", 
+  "DND5E.CurrencyAbbrEP": "ep", 
+  "DND5E.CurrencyAbbrGP": "cr", 
+  "DND5E.CurrencyAbbrPP": "pp", 
+  "DND5E.CurrencyAbbrSP": "sp", 
+  "DND5E.CurrencyCP": "Copper", 
+  "DND5E.CurrencyEP": "Electrum", 
+  "DND5E.CurrencyGP": "Credits", 
+  "DND5E.CurrencyPP": "Platinum", 
+  "DND5E.CurrencySP": "Silver",
+  "EFFECT.DND5E.StatusLifted": "Lifted",
+  "EFFECT.DND5E.StatusFrozen": "Frozen",
+  "EFFECT.DND5E.Statuspcold": "Primed Cold",
+  "EFFECT.DND5E.Statuspfire": "Primed Fire",
+  "EFFECT.DND5E.Statuspforce": "Primed Force",
+  "EFFECT.DND5E.Statusplightning": "Primed Lightning",
+  "EFFECT.DND5E.Statuspnecrotic": "Primed Necrotic",
+  "EFFECT.DND5E.Statuspradiant": "Primed Radiant"
+
+  
+
 }

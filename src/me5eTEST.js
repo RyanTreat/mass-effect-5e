@@ -1,15 +1,14 @@
 
 Hooks.once("init", () => {
-
-    CONFIG.DND5E.currencies = {
-    	  gp: { label: "Credits", abbreviation: "cr" }
-    	};
-      
 	
-
+	CONFIG.DND5E.currencies = {
+	  gp: { label: "Credits", abbreviation: "cr" }
+	};
+  
+	
 //Create new weapon properties
     CONFIG.DND5E.itemProperties.arc = {
-        label: "Arc",
+        label: "Ar",
         isPhysical: true,
         reference: "Compendium.mass-effect-5e.me5e-r-rules.JournalEntry.coUqupVCukVK3vFc.JournalEntryPage.viRtMNVmzOHD5pTX"
     };
@@ -327,6 +326,72 @@ Hooks.once("init", () => {
 
 //Add senses
     CONFIG.DND5E.senses.tremorsense = 'Infrared';
+	
+	CONFIG.DND5E.conditionTypes.lifted = {
+	  name: "EFFECT.DND5E.StatusLifted",
+	  img: "modules/mass-effect-5e/assets/icons/lifted.svg",
+	  reference: "Compendium.world.journals.JournalEntry.CxVLbrQKzQ9TVjhr.JournalEntryPage.x4Ql5AfEVs77TC5m",
+	  pseudo: false,
+	  statuses: ["restrained"]
+	};
+
+	CONFIG.DND5E.conditionTypes.frozen = {
+	  name: "EFFECT.DND5E.StatusFrozen",
+	  img: "modules/mass-effect-5e/assets/icons/frozen.svg",
+	  reference: "Compendium.world.journals.JournalEntry.CxVLbrQKzQ9TVjhr.JournalEntryPage.h2DSPh0eoZOGg0e1",
+	  pseudo: false,
+	  statuses: ["incapacitated"]
+	};
+	
+	CONFIG.DND5E.conditionTypes.pcold = {
+	  name: "EFFECT.DND5E.Statuspcold",
+	  img: "modules/mass-effect-5e/assets/icons/pcold.svg",
+	  reference: "Compendium.world.journals.JournalEntry.CxVLbrQKzQ9TVjhr.JournalEntryPage.bA4tUUWDD9W0KkcH",
+	  pseudo: false,
+	  statuses: ["incapacitated"]
+	};
+	
+	CONFIG.DND5E.conditionTypes.pfire = {
+	  name: "EFFECT.DND5E.Statuspfire",
+	  img: "modules/mass-effect-5e/assets/icons/pfire.svg",
+	  reference: "Compendium.world.journals.JournalEntry.CxVLbrQKzQ9TVjhr.JournalEntryPage.x0O7UvbkK0CP8Y6m",
+	  pseudo: false,
+	  statuses: ["incapacitated"]
+	};
+	
+	CONFIG.DND5E.conditionTypes.pforce = {
+	  name: "EFFECT.DND5E.Statuspforce",
+	  img: "modules/mass-effect-5e/assets/icons/pforce.svg",
+	  reference: "Compendium.world.journals.JournalEntry.CxVLbrQKzQ9TVjhr.JournalEntryPage.wD28HUD1g2STaTB1",
+	  pseudo: false,
+	  statuses: ["incapacitated"]
+	};
+	
+	CONFIG.DND5E.conditionTypes.plightning = {
+	  name: "EFFECT.DND5E.Statusplightning",
+	  img: "modules/mass-effect-5e/assets/icons/plightning.svg",
+	  reference: "Compendium.world.journals.JournalEntry.CxVLbrQKzQ9TVjhr.JournalEntryPage.juzBx97rjwqXLSIY",
+	  pseudo: false,
+	  statuses: ["incapacitated"]
+	};
+	
+	CONFIG.DND5E.conditionTypes.pnecrotic = {
+	  name: "EFFECT.DND5E.Statuspnecrotic",
+	  img: "modules/mass-effect-5e/assets/icons/pnecrotic.svg",
+	  reference: "Compendium.world.journals.JournalEntry.CxVLbrQKzQ9TVjhr.JournalEntryPage.apVuR8NpS4tCt3za",
+	  pseudo: false,
+	  statuses: ["incapacitated"]
+	};
+	
+	CONFIG.DND5E.conditionTypes.pradiant = {
+	  name: "EFFECT.DND5E.Statuspradiant",
+	  img: "modules/mass-effect-5e/assets/icons/pradiant.svg",
+	  reference: "Compendium.world.journals.JournalEntry.CxVLbrQKzQ9TVjhr.JournalEntryPage.qexa4XoQ8DEhFUAA",
+	  pseudo: false,
+	  statuses: ["incapacitated"]
+	};
+	
+	
 
 });
 
