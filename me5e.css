@@ -2,3 +2,20 @@
 :is(.dnd5e2,.dnd5e2-journal) :is(i, span).currency.gp { background-image: url("assets/icons/credit-icon.svg")!important}
 
 
+.dnd5e2.sheet.item .sheet-header .school {
+    --icon-size: 60px;
+}
+
+
+body.theme-dark .dnd5e2 {
+    --dnd5e-item-header-image: url("/modules/mass-effect-5e/assets/artwork/mass-effect-n7-header.jpg") !important;
+    --dnd5e-character-background-image: url("/modules/mass-effect-5e/assets/artwork/mass-effect-n7-header.jpg") !important
+}
+
+/* Style character sheet backgrounds */
+.dnd5e2 .character-sheet .window-app {
+    background-image: var(--dnd5e-character-background-image) !important;
+    background-size: cover !important;
+    background-position: center center !important; /* change to 'bottom center' to align bottom */
+    background-repeat: no-repeat !important;
+}

@@ -1,5 +1,3 @@
-2025/10/13-09:58:06.444 3ff4 Log #310: 0 ops saved to Table #311 OK
-2025/10/13-09:58:06.444 3ff4 Archiving C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\item-gear-me5e-r/000310.log: OK
-2025/10/13-09:58:06.445 3ff4 Table #289: 270 entries OK
-2025/10/13-09:58:06.450 3ff4 Archiving C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\item-gear-me5e-r/MANIFEST-000309: OK
-2025/10/13-09:58:06.463 3ff4 **** Repaired leveldb C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\item-gear-me5e-r; recovered 1 files; 306703 bytes. Some data may have been lost. ****
+2025/10/13-12:32:53.408 2694 Recovering log #313
+2025/10/13-12:32:53.421 2694 Delete type=0 #313
+2025/10/13-12:32:53.422 2694 Delete type=3 #312

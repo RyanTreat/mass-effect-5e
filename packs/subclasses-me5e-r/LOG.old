@@ -1,4 +1,3 @@
-2025/10/13-09:58:06.770 7130 Log #295: 0 ops saved to Table #296 OK
-2025/10/13-09:58:06.770 7130 Archiving C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\subclasses-me5e-r/000295.log: OK
-2025/10/13-09:58:06.780 7130 Archiving C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\subclasses-me5e-r/MANIFEST-000294: OK
-2025/10/13-09:58:06.785 7130 **** Repaired leveldb C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\subclasses-me5e-r; recovered 0 files; 0 bytes. Some data may have been lost. ****
+2025/10/13-12:32:53.614 6874 Recovering log #298
+2025/10/13-12:32:53.634 6874 Delete type=0 #298
+2025/10/13-12:32:53.634 6874 Delete type=3 #297
