@@ -1,3 +1,5 @@
-2025/10/10-08:58:47.614 30e4 Recovering log #303
-2025/10/10-08:58:47.616 30e4 Delete type=0 #303
-2025/10/10-08:58:47.616 30e4 Delete type=3 #302
+2025/10/13-09:58:06.243 9f30 Log #307: 0 ops saved to Table #308 OK
+2025/10/13-09:58:06.243 9f30 Archiving C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\bestiary-me5e-r/000307.log: OK
+2025/10/13-09:58:06.246 9f30 Table #252: 643 entries OK
+2025/10/13-09:58:06.251 9f30 Archiving C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\bestiary-me5e-r/MANIFEST-000306: OK
+2025/10/13-09:58:06.259 9f30 **** Repaired leveldb C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\bestiary-me5e-r; recovered 1 files; 1009561 bytes. Some data may have been lost. ****

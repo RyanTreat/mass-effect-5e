@@ -1,3 +1,5 @@
-2025/10/10-08:58:47.712 3ec8 Recovering log #299
-2025/10/10-08:58:47.716 3ec8 Delete type=0 #299
-2025/10/10-08:58:47.716 3ec8 Delete type=3 #298
+2025/10/13-09:58:06.619 3ff4 Log #303: 0 ops saved to Table #304 OK
+2025/10/13-09:58:06.619 3ff4 Archiving C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\me5e-r-rules/000303.log: OK
+2025/10/13-09:58:06.620 3ff4 Table #192: 60 entries OK
+2025/10/13-09:58:06.627 3ff4 Archiving C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\me5e-r-rules/MANIFEST-000302: OK
+2025/10/13-09:58:06.633 3ff4 **** Repaired leveldb C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\me5e-r-rules; recovered 1 files; 42069 bytes. Some data may have been lost. ****

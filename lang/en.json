@@ -30,8 +30,9 @@
   "EFFECT.DND5E.Statuspforce": "Primed Force",
   "EFFECT.DND5E.Statusplightning": "Primed Lightning",
   "EFFECT.DND5E.Statuspnecrotic": "Primed Necrotic",
-  "EFFECT.DND5E.Statuspradiant": "Primed Radiant"
-
-  
+  "EFFECT.DND5E.Statuspradiant": "Primed Radiant",
+  "DND5E.SchoolTech": "Tech",
+  "DND5E.SchoolBiotic": "Biotic",
+  "DND5E.SchoolCombat": "Combat"
 
 }

@@ -1,11 +1,6 @@
-2025/10/10-08:58:47.720 10b4 Recovering log #300
-2025/10/10-08:58:47.720 10b4 Level-0 table #302: started
-2025/10/10-08:58:47.725 10b4 Level-0 table #302: 18757 bytes OK
-2025/10/10-08:58:47.730 10b4 Delete type=0 #300
-2025/10/10-08:58:47.730 10b4 Delete type=3 #299
-2025/10/10-09:20:16.345 2e7c Compacting 2@0 + 0@1 files
-2025/10/10-09:20:16.372 2e7c Generated table #304@0: 362 keys, 437321 bytes
-2025/10/10-09:20:16.372 2e7c Compacted 2@0 + 0@1 files => 437321 bytes
-2025/10/10-09:20:16.374 2e7c compacted to: files[ 0 1 0 0 0 0 0 ]
-2025/10/10-09:20:16.375 2e7c Delete type=2 #293
-2025/10/10-09:20:16.376 2e7c Delete type=2 #302
+2025/10/13-09:58:06.652 7130 Log #307: 0 ops saved to Table #308 OK
+2025/10/13-09:58:06.653 7130 Archiving C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\powers-me5e-r/000307.log: OK
+2025/10/13-09:58:06.654 7130 Table #304: 362 entries OK
+2025/10/13-09:58:06.654 7130 Table #306: 25 entries OK
+2025/10/13-09:58:06.659 7130 Archiving C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\powers-me5e-r/MANIFEST-000305: OK
+2025/10/13-09:58:06.672 7130 **** Repaired leveldb C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\powers-me5e-r; recovered 2 files; 473519 bytes. Some data may have been lost. ****

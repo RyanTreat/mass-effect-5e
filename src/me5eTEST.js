@@ -201,31 +201,6 @@ Hooks.once("init", () => {
     delete CONFIG.DND5E.itemRarity.legendary;
     delete CONFIG.DND5E.itemRarity.artifact;
 
-/*
-//Create new "schools of magic"
-    CONFIG.DND5E.spellSchools.biotics = {
-        label: "Biotics",
-        icon: "",
-        fullKey: "biotics",
-        reference: ""
-    };
-    CONFIG.DND5E.spellSchools.tech = {
-        label: "Tech",
-        icon: "",
-        fullKey: "tech",
-        reference: ""
-    };
-    CONFIG.DND5E.spellSchools.combatpowers = {
-        label: "Combat Powers",
-        icon: "",
-        fullKey: "combatpowers",
-        reference: ""
-    };
-*/
-
-    CONFIG.DND5E.spellSchools.con.label = "Tech";
-
-
 //Create tools
     CONFIG.DND5E.toolTypes.starship = "Starship";
 
@@ -323,7 +298,29 @@ Hooks.once("init", () => {
 
     delete CONFIG.DND5E.toolTypes.music;
 
+		CONFIG.DND5E.spellSchools.biotic = {
+		label: "Biotic",
+		icon: "modules/mass-effect-5e/assets/icons/classes/Biotic.svg",
+		fullKey: "biotic",
+		reference: "Compendium.world.journals.JournalEntry.bioticRef" // optional
+	  };
 
+  // --- Add Tech ---
+	  CONFIG.DND5E.spellSchools.tech = {
+		label: "Tech",
+		icon: "modules/mass-effect-5e/assets/icons/classes/Tech.svg",
+		fullKey: "tech",
+		reference: "Compendium.world.journals.JournalEntry.techRef"
+	  };
+
+  // --- Add Combat ---
+	CONFIG.DND5E.spellSchools.combat = {
+		label: "Combat",
+		icon: "modules/mass-effect-5e/assets/icons/classes/Combat.svg",
+		fullKey: "combat",
+		reference: "Compendium.world.journals.JournalEntry.combatRef"
+	  };
+		
 //Add senses
     CONFIG.DND5E.senses.tremorsense = 'Infrared';
 	

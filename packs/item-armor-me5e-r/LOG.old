@@ -1,3 +1,5 @@
-2025/10/10-08:58:47.659 367c Recovering log #295
-2025/10/10-08:58:47.664 367c Delete type=0 #295
-2025/10/10-08:58:47.664 367c Delete type=3 #294
+2025/10/13-09:58:06.410 3ff4 Log #299: 0 ops saved to Table #300 OK
+2025/10/13-09:58:06.411 3ff4 Archiving C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\item-armor-me5e-r/000299.log: OK
+2025/10/13-09:58:06.411 3ff4 Table #278: 321 entries OK
+2025/10/13-09:58:06.418 3ff4 Archiving C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\item-armor-me5e-r/MANIFEST-000298: OK
+2025/10/13-09:58:06.423 3ff4 **** Repaired leveldb C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\item-armor-me5e-r; recovered 1 files; 199147 bytes. Some data may have been lost. ****
