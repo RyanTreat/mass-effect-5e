@@ -388,7 +388,74 @@ Hooks.once("init", () => {
 	  statuses: [""]
 	};
 	
+	CONFIG.DND5E.itemProperties.det = {
+		label: "DND5E.ITEM.Property.Detonates",
+		icon: "",
+		abbreviation: "DND5E.ComponentDetonatesAbbr",
+		reference: "",
+		isTag: true
+	  };
 	
+	CONFIG.DND5E.itemProperties.primesCold = {
+		label: "DND5E.ITEM.Property.PrimesCold",
+		icon: "modules/mass-effect-5e/assets/icons/primed-cold.svg",
+		abbreviation: "DND5E.ComponentPrimesColdAbbr",
+		reference: "",
+		isTag: true
+	  };
+
+	  // --- Primed: Fire
+	  CONFIG.DND5E.itemProperties.primesFire = {
+		label: "DND5E.ITEM.Property.PrimesFire",
+		icon: "modules/mass-effect-5e/assets/icons/primed-fire.svg",
+		abbreviation: "DND5E.ComponentPrimesFireAbbr",
+		reference: "",
+		isTag: true
+	  };
+
+	  // --- Primed: Force
+	  CONFIG.DND5E.itemProperties.primesForce = {
+		label: "DND5E.ITEM.Property.PrimesForce",
+		icon: "",
+		abbreviation: "DND5E.ComponentPrimesForceAbbr",
+		reference: "",
+		isTag: true
+	  };
+
+	  // --- Primed: Lightning
+	  CONFIG.DND5E.itemProperties.primesLightning = {
+		label: "DND5E.ITEM.Property.PrimesLightning",
+		icon: "",
+		abbreviation: "DND5E.ComponentPrimesLightningAbbr",
+		reference: "",
+		isTag: true
+	  };
+
+	  // --- Primed: Necrotic
+	  CONFIG.DND5E.itemProperties.primesNecrotic = {
+		label: "DND5E.ITEM.Property.PrimesNecrotic",
+		icon: "",
+		abbreviation: "DND5E.ComponentPrimesNecroticAbbr",
+		reference: "",
+		isTag: true
+	  };
+
+	  // --- Primed: Radiant
+	  CONFIG.DND5E.itemProperties.primesRadiant = {
+		label: "DND5E.ITEM.Property.PrimesRadiant",
+		icon: "",
+		abbreviation: "DND5E.ComponentPrimesRadiantAbbr",
+		reference: "",
+		isTag: true
+	  };
+	// Make it a valid property for spells
+	CONFIG.DND5E.validProperties.spell.add("det");
+	CONFIG.DND5E.validProperties.spell.add("primesCold");
+	CONFIG.DND5E.validProperties.spell.add("primesFire");
+	CONFIG.DND5E.validProperties.spell.add("primesForce");
+	CONFIG.DND5E.validProperties.spell.add("primesLightning");
+	CONFIG.DND5E.validProperties.spell.add("primesNecrotic");
+	CONFIG.DND5E.validProperties.spell.add("primesRadiant");
 
 });
 

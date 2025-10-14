@@ -33,6 +33,13 @@
   "EFFECT.DND5E.Statuspradiant": "Primed Radiant",
   "DND5E.SchoolTech": "Tech",
   "DND5E.SchoolBiotic": "Biotic",
-  "DND5E.SchoolCombat": "Combat"
-
+  "DND5E.SchoolCombat": "Combat",
+  "DND5E.ITEM.Property.Detonates": "Detonates",
+  "DND5E.ITEM.Property.PrimesCold": "Primes: Cold",
+  "DND5E.ITEM.Property.PrimesFire": "Primes: Fire",
+  "DND5E.ITEM.Property.PrimesForce": "Primes: Force",
+  "DND5E.ITEM.Property.PrimesLightning": "Primes: Lightning",
+  "DND5E.ITEM.Property.PrimesNecrotic": "Primes: Necrotic",
+  "DND5E.ITEM.Property.PrimesRadiant": "Primes: Radiant",
+  "DND5E.ComponentDetonatesAbbr": "D"
 }
