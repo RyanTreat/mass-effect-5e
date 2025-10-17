@@ -1,3 +1,6 @@
-2025/10/16-17:16:48.661 d38 Recovering log #337
-2025/10/16-17:16:48.670 d38 Delete type=0 #337
-2025/10/16-17:16:48.671 d38 Delete type=3 #336
+2025/10/17-13:19:49.343 2468 Log #341: 14 ops saved to Table #342 OK
+2025/10/17-13:19:49.345 2468 Archiving C:\AMPDatastore\Instances\FoundryVirtualTabletop01\foundry-vtt\data\Data\modules\mass-effect-5e\packs\powers-me5e-r/000341.log: OK
+2025/10/17-13:19:49.351 2468 Table #335: 375 entries OK
+2025/10/17-13:19:49.351 2468 Table #342: 14 entries OK
+2025/10/17-13:19:49.508 2468 Archiving C:\AMPDatastore\Instances\FoundryVirtualTabletop01\foundry-vtt\data\Data\modules\mass-effect-5e\packs\powers-me5e-r/MANIFEST-000340: OK
+2025/10/17-13:19:49.666 2468 **** Repaired leveldb C:\AMPDatastore\Instances\FoundryVirtualTabletop01\foundry-vtt\data\Data\modules\mass-effect-5e\packs\powers-me5e-r; recovered 2 files; 487375 bytes. Some data may have been lost. ****

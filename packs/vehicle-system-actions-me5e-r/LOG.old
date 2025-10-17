@@ -1,3 +1,5 @@
-2025/10/16-17:16:48.706 d38 Recovering log #315
-2025/10/16-17:16:48.716 d38 Delete type=0 #315
-2025/10/16-17:16:48.716 d38 Delete type=3 #314
+2025/10/17-13:19:51.630 d14 Log #319: 0 ops saved to Table #320 OK
+2025/10/17-13:19:51.630 d14 Archiving C:\AMPDatastore\Instances\FoundryVirtualTabletop01\foundry-vtt\data\Data\modules\mass-effect-5e\packs\vehicle-system-actions-me5e-r/000319.log: OK
+2025/10/17-13:19:51.634 d14 Table #187: 30 entries OK
+2025/10/17-13:19:51.834 d14 Archiving C:\AMPDatastore\Instances\FoundryVirtualTabletop01\foundry-vtt\data\Data\modules\mass-effect-5e\packs\vehicle-system-actions-me5e-r/MANIFEST-000318: OK
+2025/10/17-13:19:52.056 d14 **** Repaired leveldb C:\AMPDatastore\Instances\FoundryVirtualTabletop01\foundry-vtt\data\Data\modules\mass-effect-5e\packs\vehicle-system-actions-me5e-r; recovered 1 files; 29763 bytes. Some data may have been lost. ****

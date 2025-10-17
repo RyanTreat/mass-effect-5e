@@ -1,3 +1,6 @@
-2025/10/16-17:16:48.572 c024 Recovering log #317
-2025/10/16-17:16:48.582 c024 Delete type=0 #317
-2025/10/16-17:16:48.582 c024 Delete type=3 #315
+2025/10/17-13:19:37.441 9e0 Log #321: 0 ops saved to Table #322 OK
+2025/10/17-13:19:37.443 9e0 Archiving C:\AMPDatastore\Instances\FoundryVirtualTabletop01\foundry-vtt\data\Data\modules\mass-effect-5e\packs\item-armor-me5e-r/000321.log: OK
+2025/10/17-13:19:37.447 9e0 Table #278: 321 entries OK
+2025/10/17-13:19:37.451 9e0 Table #316: 130 entries OK
+2025/10/17-13:19:37.636 9e0 Archiving C:\AMPDatastore\Instances\FoundryVirtualTabletop01\foundry-vtt\data\Data\modules\mass-effect-5e\packs\item-armor-me5e-r/MANIFEST-000320: OK
+2025/10/17-13:19:37.737 9e0 **** Repaired leveldb C:\AMPDatastore\Instances\FoundryVirtualTabletop01\foundry-vtt\data\Data\modules\mass-effect-5e\packs\item-armor-me5e-r; recovered 2 files; 351555 bytes. Some data may have been lost. ****

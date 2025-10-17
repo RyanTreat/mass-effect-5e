@@ -1,9 +1,6 @@
-2025/10/16-17:16:48.588 d38 Recovering log #328
-2025/10/16-17:16:48.596 d38 Delete type=0 #328
-2025/10/16-17:16:48.597 d38 Delete type=3 #326
-2025/10/16-17:24:21.995 b558 Compacting 2@0 + 0@1 files
-2025/10/16-17:24:22.003 b558 Generated table #331@0: 270 keys, 310159 bytes
-2025/10/16-17:24:22.003 b558 Compacted 2@0 + 0@1 files => 310159 bytes
-2025/10/16-17:24:22.008 b558 compacted to: files[ 0 1 0 0 0 0 0 ]
-2025/10/16-17:24:22.008 b558 Delete type=2 #289
-2025/10/16-17:24:22.008 b558 Delete type=2 #327
+2025/10/17-13:19:37.993 9e0 Log #334: 0 ops saved to Table #335 OK
+2025/10/17-13:19:37.994 9e0 Archiving C:\AMPDatastore\Instances\FoundryVirtualTabletop01\foundry-vtt\data\Data\modules\mass-effect-5e\packs\item-gear-me5e-r/000334.log: OK
+2025/10/17-13:19:38.000 9e0 Table #331: 270 entries OK
+2025/10/17-13:19:38.044 9e0 Table #333: 93 entries OK
+2025/10/17-13:19:38.203 9e0 Archiving C:\AMPDatastore\Instances\FoundryVirtualTabletop01\foundry-vtt\data\Data\modules\mass-effect-5e\packs\item-gear-me5e-r/MANIFEST-000332: OK
+2025/10/17-13:19:38.321 9e0 **** Repaired leveldb C:\AMPDatastore\Instances\FoundryVirtualTabletop01\foundry-vtt\data\Data\modules\mass-effect-5e\packs\item-gear-me5e-r; recovered 2 files; 420100 bytes. Some data may have been lost. ****

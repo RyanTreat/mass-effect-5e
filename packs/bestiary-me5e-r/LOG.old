@@ -1,9 +1,5 @@
-2025/10/16-17:16:48.504 b634 Recovering log #325
-2025/10/16-17:16:48.514 b634 Delete type=0 #325
-2025/10/16-17:16:48.514 b634 Delete type=3 #323
-2025/10/16-18:04:38.988 b558 Compacting 2@0 + 0@1 files
-2025/10/16-18:04:39.017 b558 Generated table #328@0: 643 keys, 1011169 bytes
-2025/10/16-18:04:39.017 b558 Compacted 2@0 + 0@1 files => 1011169 bytes
-2025/10/16-18:04:39.021 b558 compacted to: files[ 0 1 0 0 0 0 0 ]
-2025/10/16-18:04:39.021 b558 Delete type=2 #252
-2025/10/16-18:04:39.021 b558 Delete type=2 #324
+2025/10/17-13:19:34.997 d14 Log #330: 0 ops saved to Table #331 OK
+2025/10/17-13:19:34.999 d14 Archiving C:\AMPDatastore\Instances\FoundryVirtualTabletop01\foundry-vtt\data\Data\modules\mass-effect-5e\packs\bestiary-me5e-r/000330.log: OK
+2025/10/17-13:19:35.009 d14 Table #328: 643 entries OK
+2025/10/17-13:19:35.188 d14 Archiving C:\AMPDatastore\Instances\FoundryVirtualTabletop01\foundry-vtt\data\Data\modules\mass-effect-5e\packs\bestiary-me5e-r/MANIFEST-000329: OK
+2025/10/17-13:19:35.286 d14 **** Repaired leveldb C:\AMPDatastore\Instances\FoundryVirtualTabletop01\foundry-vtt\data\Data\modules\mass-effect-5e\packs\bestiary-me5e-r; recovered 1 files; 1011169 bytes. Some data may have been lost. ****

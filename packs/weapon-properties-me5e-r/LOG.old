@@ -1,3 +1,5 @@
-2025/10/16-17:16:48.720 2b74 Recovering log #312
-2025/10/16-17:16:48.729 2b74 Delete type=0 #312
-2025/10/16-17:16:48.729 2b74 Delete type=3 #311
+2025/10/17-13:19:52.398 d14 Log #316: 0 ops saved to Table #317 OK
+2025/10/17-13:19:52.402 d14 Archiving C:\AMPDatastore\Instances\FoundryVirtualTabletop01\foundry-vtt\data\Data\modules\mass-effect-5e\packs\weapon-properties-me5e-r/000316.log: OK
+2025/10/17-13:19:52.404 d14 Table #184: 26 entries OK
+2025/10/17-13:19:53.220 d14 Archiving C:\AMPDatastore\Instances\FoundryVirtualTabletop01\foundry-vtt\data\Data\modules\mass-effect-5e\packs\weapon-properties-me5e-r/MANIFEST-000315: OK
+2025/10/17-13:19:53.507 d14 **** Repaired leveldb C:\AMPDatastore\Instances\FoundryVirtualTabletop01\foundry-vtt\data\Data\modules\mass-effect-5e\packs\weapon-properties-me5e-r; recovered 1 files; 5958 bytes. Some data may have been lost. ****

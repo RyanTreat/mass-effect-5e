@@ -1,3 +1,6 @@
-2025/10/16-17:16:48.604 2b74 Recovering log #317
-2025/10/16-17:16:48.613 2b74 Delete type=0 #317
-2025/10/16-17:16:48.613 2b74 Delete type=3 #315
+2025/10/17-13:19:38.557 9e0 Log #321: 0 ops saved to Table #322 OK
+2025/10/17-13:19:38.559 9e0 Archiving C:\AMPDatastore\Instances\FoundryVirtualTabletop01\foundry-vtt\data\Data\modules\mass-effect-5e\packs\item-mods-me5e-r/000321.log: OK
+2025/10/17-13:19:38.563 9e0 Table #244: 159 entries OK
+2025/10/17-13:19:38.567 9e0 Table #316: 188 entries OK
+2025/10/17-13:19:38.703 9e0 Archiving C:\AMPDatastore\Instances\FoundryVirtualTabletop01\foundry-vtt\data\Data\modules\mass-effect-5e\packs\item-mods-me5e-r/MANIFEST-000320: OK
+2025/10/17-13:19:40.562 9e0 **** Repaired leveldb C:\AMPDatastore\Instances\FoundryVirtualTabletop01\foundry-vtt\data\Data\modules\mass-effect-5e\packs\item-mods-me5e-r; recovered 2 files; 327021 bytes. Some data may have been lost. ****
