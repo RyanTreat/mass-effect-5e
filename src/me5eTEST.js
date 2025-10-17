@@ -475,6 +475,23 @@ Hooks.once("init", () => {
 	CONFIG.DND5E.validProperties.equipment.add("magazine");
 	CONFIG.DND5E.validProperties.equipment.add("grip");
 	CONFIG.DND5E.validProperties.equipment.add("strike");
+	
+	
+	
+	CONFIG.DND5E.spellSlotTypes.tech = {
+    label: "Tech Slots",
+    progression: "techcaster",
+    levels: 3 // Example: 3 levels of Tech Slots
+  };
+
+  // Add a new spell progression if needed
+  CONFIG.DND5E.spellProgressions.techcaster = {
+    1: [2, 0, 0],   // Level 1: 2 slots
+    2: [3, 0, 0],   // Level 2: 3 slots
+    3: [3, 2, 0],   // Level 3: 3/2 slots
+  };
+
+
 });
 /* const prep = dnd5e.documents.Actor5e.prototype.prepareBaseData
 function extendActorData() {
