@@ -1,23 +1,3 @@
-Hooks.on("ready", () => {
-  const origPrepareBaseData = CONFIG.DND5E.Item.documentClass.prototype.prepareBaseData;
-
-  CONFIG.DND5E.Item.documentClass.prototype.prepareBaseData = function () {
-    // Call the original
-    origPrepareBaseData.call(this);
-
-    // Only apply to your Mass Effect equipment types
-    const types = ["weapon", "equipment", "armor", "wepMod", "bodArm"];
-    if (!types.includes(this.type)) return;
-
-    // Add your custom properties
-    const meProps = ["arc","bfr","dtp","heat","hip","mel","rcl","slt","vtd","ammo","barrel","body","magazine","grip","strike"];
-    this.system.properties = this.system.properties || [];
-    for (let key of meProps) {
-      if (!this.system.properties.includes(key)) this.system.properties.push(key);
-    }
-  };
-});
-
 Hooks.once("init", () => {
 	
 	CONFIG.DND5E.currencies = {
@@ -342,7 +322,7 @@ Hooks.once("init", () => {
 	CONFIG.DND5E.conditionTypes.lifted = {
 	  name: "EFFECT.DND5E.StatusLifted",
 	  img: "modules/mass-effect-5e/assets/icons/lifted.svg",
-	  reference: "Compendium.world.journals.JournalEntry.CxVLbrQKzQ9TVjhr.JournalEntryPage.x4Ql5AfEVs77TC5m",
+	  reference: "Compendium.mass-effect-5e.me5e-r-rules.JournalEntry.fjrkdCYzMtGncBjh.JournalEntryPage.x4Ql5AfEVs77TC5m",
 	  pseudo: false,
 	  statuses: ["restrained"]
 	};
@@ -350,7 +330,7 @@ Hooks.once("init", () => {
 	CONFIG.DND5E.conditionTypes.frozen = {
 	  name: "EFFECT.DND5E.StatusFrozen",
 	  img: "modules/mass-effect-5e/assets/icons/frozen.svg",
-	  reference: "Compendium.world.journals.JournalEntry.CxVLbrQKzQ9TVjhr.JournalEntryPage.h2DSPh0eoZOGg0e1",
+	  reference: "Compendium.mass-effect-5e.me5e-r-rules.JournalEntry.fjrkdCYzMtGncBjh.JournalEntryPage.h2DSPh0eoZOGg0e1",
 	  pseudo: false,
 	  statuses: ["incapacitated"]
 	};
@@ -358,49 +338,44 @@ Hooks.once("init", () => {
 	CONFIG.DND5E.conditionTypes.pcold = {
 	  name: "EFFECT.DND5E.Statuspcold",
 	  img: "modules/mass-effect-5e/assets/icons/pcold.svg",
-	  reference: "Compendium.world.journals.JournalEntry.CxVLbrQKzQ9TVjhr.JournalEntryPage.bA4tUUWDD9W0KkcH",
+	  reference: "Compendium.mass-effect-5e.me5e-r-rules.JournalEntry.fjrkdCYzMtGncBjh.JournalEntryPage.bA4tUUWDD9W0KkcH",
 	  pseudo: false,
-	  statuses: [""]
+	  statuses: ["Primed: Cold"]
 	};
 	
 	CONFIG.DND5E.conditionTypes.pfire = {
 	  name: "EFFECT.DND5E.Statuspfire",
 	  img: "modules/mass-effect-5e/assets/icons/pfire.svg",
-	  reference: "Compendium.world.journals.JournalEntry.CxVLbrQKzQ9TVjhr.JournalEntryPage.x0O7UvbkK0CP8Y6m",
+	  reference: "Compendium.mass-effect-5e.me5e-r-rules.JournalEntry.fjrkdCYzMtGncBjh.JournalEntryPage.x0O7UvbkK0CP8Y6m",
 	  pseudo: false,
-	  statuses: [""]
 	};
 	
 	CONFIG.DND5E.conditionTypes.pforce = {
 	  name: "EFFECT.DND5E.Statuspforce",
 	  img: "modules/mass-effect-5e/assets/icons/pforce.svg",
-	  reference: "Compendium.world.journals.JournalEntry.CxVLbrQKzQ9TVjhr.JournalEntryPage.wD28HUD1g2STaTB1",
+	  reference: "Compendium.mass-effect-5e.me5e-r-rules.JournalEntry.fjrkdCYzMtGncBjh.JournalEntryPage.wD28HUD1g2STaTB1",
 	  pseudo: false,
-	  statuses: [""]
 	};
 	
 	CONFIG.DND5E.conditionTypes.plightning = {
 	  name: "EFFECT.DND5E.Statusplightning",
 	  img: "modules/mass-effect-5e/assets/icons/plightning.svg",
-	  reference: "Compendium.world.journals.JournalEntry.CxVLbrQKzQ9TVjhr.JournalEntryPage.juzBx97rjwqXLSIY",
+	  reference: "Compendium.mass-effect-5e.me5e-r-rules.JournalEntry.fjrkdCYzMtGncBjh.JournalEntryPage.juzBx97rjwqXLSIY",
 	  pseudo: false,
-	  statuses: [""]
 	};
 	
 	CONFIG.DND5E.conditionTypes.pnecrotic = {
 	  name: "EFFECT.DND5E.Statuspnecrotic",
 	  img: "modules/mass-effect-5e/assets/icons/pnecrotic.svg",
-	  reference: "Compendium.world.journals.JournalEntry.CxVLbrQKzQ9TVjhr.JournalEntryPage.apVuR8NpS4tCt3za",
+	  reference: "Compendium.mass-effect-5e.me5e-r-rules.JournalEntry.fjrkdCYzMtGncBjh.JournalEntryPage.apVuR8NpS4tCt3za",
 	  pseudo: false,
-	  statuses: [""]
 	};
 	
 	CONFIG.DND5E.conditionTypes.pradiant = {
 	  name: "EFFECT.DND5E.Statuspradiant",
 	  img: "modules/mass-effect-5e/assets/icons/pradiant.svg",
-	  reference: "Compendium.world.journals.JournalEntry.CxVLbrQKzQ9TVjhr.JournalEntryPage.qexa4XoQ8DEhFUAA",
+	  reference: "Compendium.mass-effect-5e.me5e-r-rules.JournalEntry.fjrkdCYzMtGncBjh.JournalEntryPage.qexa4XoQ8DEhFUAA",
 	  pseudo: false,
-	  statuses: [""]
 	};
 	
 	CONFIG.DND5E.itemProperties.det = {
@@ -409,7 +384,7 @@ Hooks.once("init", () => {
 		abbreviation: "DND5E.ComponentDetonatesAbbr",
 		reference: "",
 		isTag: true
-	  };
+	};
 	
 	CONFIG.DND5E.itemProperties.primesCold = {
 		label: "DND5E.ITEM.Property.PrimesCold",
@@ -417,52 +392,47 @@ Hooks.once("init", () => {
 		abbreviation: "DND5E.ComponentPrimesColdAbbr",
 		reference: "",
 		isTag: true
-	  };
+	};
 
-	  // --- Primed: Fire
 	  CONFIG.DND5E.itemProperties.primesFire = {
 		label: "DND5E.ITEM.Property.PrimesFire",
 		icon: "modules/mass-effect-5e/assets/icons/primed-fire.svg",
 		abbreviation: "DND5E.ComponentPrimesFireAbbr",
 		reference: "",
 		isTag: true
-	  };
+	};
 
-	  // --- Primed: Force
 	  CONFIG.DND5E.itemProperties.primesForce = {
 		label: "DND5E.ITEM.Property.PrimesForce",
 		icon: "",
 		abbreviation: "DND5E.ComponentPrimesForceAbbr",
 		reference: "",
 		isTag: true
-	  };
+	};
 
-	  // --- Primed: Lightning
 	  CONFIG.DND5E.itemProperties.primesLightning = {
 		label: "DND5E.ITEM.Property.PrimesLightning",
 		icon: "",
 		abbreviation: "DND5E.ComponentPrimesLightningAbbr",
 		reference: "",
 		isTag: true
-	  };
-
-	  // --- Primed: Necrotic
+	};
+	  
 	  CONFIG.DND5E.itemProperties.primesNecrotic = {
 		label: "DND5E.ITEM.Property.PrimesNecrotic",
 		icon: "",
 		abbreviation: "DND5E.ComponentPrimesNecroticAbbr",
 		reference: "",
 		isTag: true
-	  };
+	};
 
-	  // --- Primed: Radiant
 	  CONFIG.DND5E.itemProperties.primesRadiant = {
 		label: "DND5E.ITEM.Property.PrimesRadiant",
 		icon: "",
 		abbreviation: "DND5E.ComponentPrimesRadiantAbbr",
 		reference: "",
 		isTag: true
-	  };
+	};
 	  
 	  CONFIG.DND5E.itemProperties.ammo = {
 		label: "DND5E.ITEM.Property.Ammo",
@@ -472,23 +442,23 @@ Hooks.once("init", () => {
 	  CONFIG.DND5E.itemProperties.barrel = {
 		label: "DND5E.ITEM.Property.Barrel",
 		isPhysical: false
-	};
+	  };
 	  CONFIG.DND5E.itemProperties.body = {
 		label: "DND5E.ITEM.Property.Body",
 		isPhysical: false
-	};
+	  };
 	  CONFIG.DND5E.itemProperties.magazine = {
 		label: "DND5E.ITEM.Property.Magazine",
 		isPhysical: false
-	};
+	  };
 	  CONFIG.DND5E.itemProperties.strike = {
 		label: "DND5E.ITEM.Property.Strike",
 		isPhysical: false
-	};
+	  };
 	  CONFIG.DND5E.itemProperties.grip = {
 		label: "DND5E.ITEM.Property.Grip",
 		isPhysical: false
-	};
+	  };
 	
 	// Make it a valid property for spells
 	CONFIG.DND5E.validProperties.spell.add("det");
@@ -506,7 +476,6 @@ Hooks.once("init", () => {
 	CONFIG.DND5E.validProperties.equipment.add("grip");
 	CONFIG.DND5E.validProperties.equipment.add("strike");
 });
-
 /* const prep = dnd5e.documents.Actor5e.prototype.prepareBaseData
 function extendActorData() {
 	const health = this.system.attributes.hp;

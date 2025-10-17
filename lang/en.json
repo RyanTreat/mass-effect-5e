@@ -45,7 +45,6 @@
   "DND5E.ITEM.Property.Barrel": "Barrel",
   "DND5E.ITEM.Property.Body": "Body",
   "DND5E.ITEM.Property.Magazine": "Magazine",
-   "DND5E.ITEM.Property.Grip": "Grip",
+  "DND5E.ITEM.Property.Grip": "Grip",
   "DND5E.ITEM.Property.Strike": "Strike"
-
 }
