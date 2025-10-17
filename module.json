@@ -196,18 +196,6 @@
       "flags": {}
     },
     {
-      "name": "subclasses-me5e-r",
-      "label": "Subclasses (ME5e R)",
-      "path": "packs/subclasses-me5e-r",
-      "type": "Item",
-      "system": "dnd5e",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      },
-      "flags": {}
-    },
-    {
       "name": "vehicle-system-actions-me5e-r",
       "label": "Vehicle System Actions (ME5e R)",
       "path": "packs/vehicle-system-actions-me5e-r",

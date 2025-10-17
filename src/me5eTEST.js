@@ -1,3 +1,22 @@
+Hooks.on("ready", () => {
+  const origPrepareBaseData = CONFIG.DND5E.Item.documentClass.prototype.prepareBaseData;
+
+  CONFIG.DND5E.Item.documentClass.prototype.prepareBaseData = function () {
+    // Call the original
+    origPrepareBaseData.call(this);
+
+    // Only apply to your Mass Effect equipment types
+    const types = ["weapon", "equipment", "armor", "wepMod", "bodArm"];
+    if (!types.includes(this.type)) return;
+
+    // Add your custom properties
+    const meProps = ["arc","bfr","dtp","heat","hip","mel","rcl","slt","vtd","ammo","barrel","body","magazine","grip","strike"];
+    this.system.properties = this.system.properties || [];
+    for (let key of meProps) {
+      if (!this.system.properties.includes(key)) this.system.properties.push(key);
+    }
+  };
+});
 
 Hooks.once("init", () => {
 	
@@ -8,7 +27,7 @@ Hooks.once("init", () => {
 	
 //Create new weapon properties
     CONFIG.DND5E.itemProperties.arc = {
-        label: "Ar",
+        label: "Arc",
         isPhysical: true,
         reference: "Compendium.mass-effect-5e.me5e-r-rules.JournalEntry.coUqupVCukVK3vFc.JournalEntryPage.viRtMNVmzOHD5pTX"
     };
@@ -297,28 +316,24 @@ Hooks.once("init", () => {
     delete CONFIG.DND5E.tools.woodcarver;
 
     delete CONFIG.DND5E.toolTypes.music;
-
+	
+  // --- Add Biotic ---
 		CONFIG.DND5E.spellSchools.biotic = {
 		label: "Biotic",
 		icon: "modules/mass-effect-5e/assets/icons/classes/Biotic.svg",
 		fullKey: "biotic",
-		reference: "Compendium.world.journals.JournalEntry.bioticRef" // optional
 	  };
-
   // --- Add Tech ---
 	  CONFIG.DND5E.spellSchools.tech = {
 		label: "Tech",
 		icon: "modules/mass-effect-5e/assets/icons/classes/Tech.svg",
 		fullKey: "tech",
-		reference: "Compendium.world.journals.JournalEntry.techRef"
-	  };
-
-  // --- Add Combat ---
+	  }
+  
 	CONFIG.DND5E.spellSchools.combat = {
 		label: "Combat",
 		icon: "modules/mass-effect-5e/assets/icons/classes/Combat.svg",
 		fullKey: "combat",
-		reference: "Compendium.world.journals.JournalEntry.combatRef"
 	  };
 		
 //Add senses
@@ -448,6 +463,33 @@ Hooks.once("init", () => {
 		reference: "",
 		isTag: true
 	  };
+	  
+	  CONFIG.DND5E.itemProperties.ammo = {
+		label: "DND5E.ITEM.Property.Ammo",
+		isPhysical: false
+	};
+	
+	  CONFIG.DND5E.itemProperties.barrel = {
+		label: "DND5E.ITEM.Property.Barrel",
+		isPhysical: false
+	};
+	  CONFIG.DND5E.itemProperties.body = {
+		label: "DND5E.ITEM.Property.Body",
+		isPhysical: false
+	};
+	  CONFIG.DND5E.itemProperties.magazine = {
+		label: "DND5E.ITEM.Property.Magazine",
+		isPhysical: false
+	};
+	  CONFIG.DND5E.itemProperties.strike = {
+		label: "DND5E.ITEM.Property.Strike",
+		isPhysical: false
+	};
+	  CONFIG.DND5E.itemProperties.grip = {
+		label: "DND5E.ITEM.Property.Grip",
+		isPhysical: false
+	};
+	
 	// Make it a valid property for spells
 	CONFIG.DND5E.validProperties.spell.add("det");
 	CONFIG.DND5E.validProperties.spell.add("primesCold");
@@ -456,11 +498,16 @@ Hooks.once("init", () => {
 	CONFIG.DND5E.validProperties.spell.add("primesLightning");
 	CONFIG.DND5E.validProperties.spell.add("primesNecrotic");
 	CONFIG.DND5E.validProperties.spell.add("primesRadiant");
-
+	
+	CONFIG.DND5E.validProperties.equipment.add("ammo");
+	CONFIG.DND5E.validProperties.equipment.add("barrel");
+	CONFIG.DND5E.validProperties.equipment.add("body");
+	CONFIG.DND5E.validProperties.equipment.add("magazine");
+	CONFIG.DND5E.validProperties.equipment.add("grip");
+	CONFIG.DND5E.validProperties.equipment.add("strike");
 });
 
-
-const prep = dnd5e.documents.Actor5e.prototype.prepareBaseData
+/* const prep = dnd5e.documents.Actor5e.prototype.prepareBaseData
 function extendActorData() {
 	const health = this.system.attributes.hp;
 	
@@ -472,7 +519,7 @@ function extendActorData() {
 
 
     return prep.call(this);
-}
+} */
 
 /*
 Hooks.on('renderActorSheet', (app, html, data) => {

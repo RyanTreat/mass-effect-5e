@@ -41,5 +41,11 @@
   "DND5E.ITEM.Property.PrimesLightning": "Primes: Lightning",
   "DND5E.ITEM.Property.PrimesNecrotic": "Primes: Necrotic",
   "DND5E.ITEM.Property.PrimesRadiant": "Primes: Radiant",
-  "DND5E.ComponentDetonatesAbbr": "D"
+  "DND5E.ITEM.Property.Ammo": "Ammo",
+  "DND5E.ITEM.Property.Barrel": "Barrel",
+  "DND5E.ITEM.Property.Body": "Body",
+  "DND5E.ITEM.Property.Magazine": "Magazine",
+   "DND5E.ITEM.Property.Grip": "Grip",
+  "DND5E.ITEM.Property.Strike": "Strike"
+
 }

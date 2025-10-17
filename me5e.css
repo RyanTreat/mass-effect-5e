@@ -9,13 +9,12 @@
 
 body.theme-dark .dnd5e2 {
     --dnd5e-item-header-image: url("/modules/mass-effect-5e/assets/artwork/mass-effect-n7-header.jpg") !important;
-    --dnd5e-character-background-image: url("/modules/mass-effect-5e/assets/artwork/mass-effect-n7-header.jpg") !important
+    --dnd5e-character-background-image: url("/modules/mass-effect-5e/assets/artwork/n7logo.jpg") !important
 }
 
-/* Style character sheet backgrounds */
-.dnd5e2 .character-sheet .window-app {
-    background-image: var(--dnd5e-character-background-image) !important;
-    background-size: cover !important;
-    background-position: center center !important; /* change to 'bottom center' to align bottom */
-    background-repeat: no-repeat !important;
+body.theme-dark .dnd5e2 .item-header {
+  background-image: var(--dnd5e-item-header-image);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
