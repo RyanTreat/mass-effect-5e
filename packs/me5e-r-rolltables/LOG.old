@@ -1,5 +1,3 @@
-2025/10/17-13:19:47.293 2468 Log #318: 0 ops saved to Table #319 OK
-2025/10/17-13:19:47.297 2468 Archiving C:\AMPDatastore\Instances\FoundryVirtualTabletop01\foundry-vtt\data\Data\modules\mass-effect-5e\packs\me5e-r-rolltables/000318.log: OK
-2025/10/17-13:19:47.299 2468 Table #242: 131 entries OK
-2025/10/17-13:19:47.590 2468 Archiving C:\AMPDatastore\Instances\FoundryVirtualTabletop01\foundry-vtt\data\Data\modules\mass-effect-5e\packs\me5e-r-rolltables/MANIFEST-000317: OK
-2025/10/17-13:19:47.810 2468 **** Repaired leveldb C:\AMPDatastore\Instances\FoundryVirtualTabletop01\foundry-vtt\data\Data\modules\mass-effect-5e\packs\me5e-r-rolltables; recovered 1 files; 24614 bytes. Some data may have been lost. ****
+2025/10/18-15:08:46.322 2af8 Recovering log #322
+2025/10/18-15:08:46.536 2af8 Delete type=0 #322
+2025/10/18-15:08:46.536 2af8 Delete type=3 #320
