@@ -1,3 +1,5 @@
-2025/10/18-15:08:47.010 272c Recovering log #323
-2025/10/18-15:08:47.227 272c Delete type=0 #323
-2025/10/18-15:08:47.227 272c Delete type=3 #321
+2025/10/21-19:39:38.715 b34 Log #329: 0 ops saved to Table #330 OK
+2025/10/21-19:39:38.715 b34 Archiving C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\racial-features-me5e-r/000329.log: OK
+2025/10/21-19:39:38.715 b34 Table #325: 36 entries OK
+2025/10/21-19:39:38.720 b34 Archiving C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\racial-features-me5e-r/MANIFEST-000328: OK
+2025/10/21-19:39:38.726 b34 **** Repaired leveldb C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\racial-features-me5e-r; recovered 1 files; 26147 bytes. Some data may have been lost. ****

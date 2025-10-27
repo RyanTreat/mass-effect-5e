@@ -1,3 +1,5 @@
-2025/10/18-15:08:47.676 272c Recovering log #323
-2025/10/18-15:08:47.884 272c Delete type=0 #323
-2025/10/18-15:08:47.886 272c Delete type=3 #321
+2025/10/21-19:39:38.769 b34 Log #329: 0 ops saved to Table #330 OK
+2025/10/21-19:39:38.770 b34 Archiving C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\vehicle-system-actions-me5e-r/000329.log: OK
+2025/10/21-19:39:38.770 b34 Table #325: 30 entries OK
+2025/10/21-19:39:38.775 b34 Archiving C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\vehicle-system-actions-me5e-r/MANIFEST-000328: OK
+2025/10/21-19:39:38.781 b34 **** Repaired leveldb C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\vehicle-system-actions-me5e-r; recovered 1 files; 29763 bytes. Some data may have been lost. ****

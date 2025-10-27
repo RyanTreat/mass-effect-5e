@@ -1,3 +1,5 @@
-2025/10/18-15:08:47.262 263c Recovering log #331
-2025/10/18-15:08:47.644 263c Delete type=0 #331
-2025/10/18-15:08:47.644 263c Delete type=3 #329
+2025/10/21-19:39:38.741 b34 Log #337: 0 ops saved to Table #338 OK
+2025/10/21-19:39:38.742 b34 Archiving C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\species-me5e-r/000337.log: OK
+2025/10/21-19:39:38.742 b34 Table #333: 275 entries OK
+2025/10/21-19:39:38.748 b34 Archiving C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\species-me5e-r/MANIFEST-000336: OK
+2025/10/21-19:39:38.754 b34 **** Repaired leveldb C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\species-me5e-r; recovered 1 files; 364896 bytes. Some data may have been lost. ****

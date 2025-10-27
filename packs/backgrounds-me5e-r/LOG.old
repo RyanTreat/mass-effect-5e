@@ -1,3 +1,5 @@
-2025/10/18-15:08:43.926 272c Recovering log #332
-2025/10/18-15:08:44.144 272c Delete type=0 #332
-2025/10/18-15:08:44.144 272c Delete type=3 #330
+2025/10/21-19:39:38.378 433c Log #338: 0 ops saved to Table #339 OK
+2025/10/21-19:39:38.379 433c Archiving C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\backgrounds-me5e-r/000338.log: OK
+2025/10/21-19:39:38.379 433c Table #334: 127 entries OK
+2025/10/21-19:39:38.383 433c Archiving C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\backgrounds-me5e-r/MANIFEST-000337: OK
+2025/10/21-19:39:38.390 433c **** Repaired leveldb C:\Users\ryand\AppData\Local\FoundryVTT\Data\modules\mass-effect-5e\packs\backgrounds-me5e-r; recovered 1 files; 101963 bytes. Some data may have been lost. ****

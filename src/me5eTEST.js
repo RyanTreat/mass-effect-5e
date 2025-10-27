@@ -1,5 +1,8 @@
 Hooks.once("init", () => {
-	
+
+	CONFIG.DND5E.itemProperties = foundry.utils.deepClone(CONFIG.DND5E.itemProperties);
+	CONFIG.DND5E.validProperties = foundry.utils.deepClone(CONFIG.DND5E.validProperties);
+
 	CONFIG.DND5E.currencies = {
 	  gp: { label: "Credits", abbreviation: "cr" }
 	};
@@ -433,32 +436,6 @@ Hooks.once("init", () => {
 		reference: "",
 		isTag: true
 	};
-	  
-	  CONFIG.DND5E.itemProperties.ammo = {
-		label: "DND5E.ITEM.Property.Ammo",
-		isPhysical: false
-	};
-	
-	  CONFIG.DND5E.itemProperties.barrel = {
-		label: "DND5E.ITEM.Property.Barrel",
-		isPhysical: false
-	  };
-	  CONFIG.DND5E.itemProperties.body = {
-		label: "DND5E.ITEM.Property.Body",
-		isPhysical: false
-	  };
-	  CONFIG.DND5E.itemProperties.magazine = {
-		label: "DND5E.ITEM.Property.Magazine",
-		isPhysical: false
-	  };
-	  CONFIG.DND5E.itemProperties.strike = {
-		label: "DND5E.ITEM.Property.Strike",
-		isPhysical: false
-	  };
-	  CONFIG.DND5E.itemProperties.grip = {
-		label: "DND5E.ITEM.Property.Grip",
-		isPhysical: false
-	  };
 	
 	// Make it a valid property for spells
 	CONFIG.DND5E.validProperties.spell.add("det");
@@ -469,110 +446,158 @@ Hooks.once("init", () => {
 	CONFIG.DND5E.validProperties.spell.add("primesNecrotic");
 	CONFIG.DND5E.validProperties.spell.add("primesRadiant");
 	
+	  CONFIG.DND5E.itemProperties.ammo = {
+		label: "DND5E.ITEM.Property.Ammo"
+	  };
+	  CONFIG.DND5E.itemProperties.barrel = {
+		label: "DND5E.ITEM.Property.Barrel"
+	  };
+	  CONFIG.DND5E.itemProperties.body = {
+		label: "DND5E.ITEM.Property.Body"
+	  };
+	  CONFIG.DND5E.itemProperties.magazine = {
+		label: "DND5E.ITEM.Property.Magazine"
+	  };
+	  CONFIG.DND5E.itemProperties.strike = {
+		label: "DND5E.ITEM.Property.Strike"
+	  };
+	  CONFIG.DND5E.itemProperties.grip = {
+		label: "DND5E.ITEM.Property.Grip"
+	  };
+	
 	CONFIG.DND5E.validProperties.equipment.add("ammo");
 	CONFIG.DND5E.validProperties.equipment.add("barrel");
 	CONFIG.DND5E.validProperties.equipment.add("body");
 	CONFIG.DND5E.validProperties.equipment.add("magazine");
 	CONFIG.DND5E.validProperties.equipment.add("grip");
 	CONFIG.DND5E.validProperties.equipment.add("strike");
+
 	
-	
-	
-	CONFIG.DND5E.spellSlotTypes.tech = {
-    label: "Tech Slots",
-    progression: "techcaster",
-    levels: 3 // Example: 3 levels of Tech Slots
+ CONFIG.DND5E.spellcasting.adept = {
+    label: "ME5E.BioticCasting",   // your localization key
+    type: "multi",                 // multiple spell levels
+    cantrips: true,
+    prepares: true,                // uses prepared casting rules
+    order: 30,                     // position in sheet tabs
+    table: [                       
+      [2],
+      [4],
+      [6],
+      [7],
+      [7, 2],
+      [7, 3],
+      [7, 4],
+      [7, 5],
+      [7, 6, 1],
+      [7, 6, 2],
+	  [7, 6, 3],
+	  [7, 6, 3],
+	  [7, 6, 3, 1],
+	  [7, 6, 3, 1],
+	  [7, 6, 3, 2],
+	  [7, 6, 3, 2],
+	  [7, 6, 3, 2, 1],
+	  [7, 6, 4, 2, 1],
+	  [7, 6, 5, 2, 1],
+	  [7, 6, 5, 3, 1],
+    ],
+    progression: {
+      adept: {
+        label: "ME5E.AdeptProgression",
+        divisor: 1
+      }
+    }
   };
-
-  // Add a new spell progression if needed
-  CONFIG.DND5E.spellProgressions.techcaster = {
-    1: [2, 0, 0],   // Level 1: 2 slots
-    2: [3, 0, 0],   // Level 2: 3 slots
-    3: [3, 2, 0],   // Level 3: 3/2 slots
+  
+  CONFIG.DND5E.spellcasting.vanguard = {
+    label: "ME5E.BioticCasting",
+    type: "multi",
+    cantrips: true,
+    prepares: true,
+    order: 31,
+    table: [                         // Power Slots by class level
+      [],            // 1  → no slots
+      [2],           // 2
+      [3],           // 3
+      [4],           // 4
+      [6],           // 5
+      [7],           // 6
+      [7],           // 7
+      [7],           // 8
+      [7, 2],        // 9
+      [7, 2],        // 10
+      [7, 3],        // 11
+      [7, 3],        // 12
+      [7, 4],        // 13
+      [7, 4],        // 14
+      [7, 5],        // 15
+      [7, 5],        // 16
+      [7, 6, 1],     // 17
+      [7, 6, 1],     // 18
+      [7, 6, 2],     // 19
+      [7, 6, 2]      // 20
+    ],
+    progression: {
+      vanguard: {
+        label: "ME5E.VanguardProgression",
+        divisor: 1 // Half-caster progression (affects multiclassing)
+      }
+    }
   };
+  
+    CONFIG.DND5E.spellcasting.sentinel = {
+    label: "ME5E.BioticCasting",   // i18n key for display name
+    type: "single",                  // all slots are the same level (like Pact Magic)
+    cantrips: true,                  // can use cantrips/powers
+    prepares: false,                 // powers are known, not prepared
+    order: 32,                       // sheet display order
+    img: "modules/mass-effect-5e/assets/icons/classes/Sentinel.svg", // optional
+    table: {                         // number of slots and their level by class level
+      1:  { slots: 1, level: 1 },
+      2:  { slots: 2, level: 1 },
+      3:  { slots: 2, level: 1 },
+      4:  { slots: 2, level: 1 },
+      5:  { slots: 2, level: 2 },
+      6:  { slots: 2, level: 2 },
+      7:  { slots: 2, level: 2 },
+      8:  { slots: 2, level: 2 },
+      9:  { slots: 2, level: 3 },
+      10: { slots: 2, level: 3 },
+      11: { slots: 3, level: 3 },
+      12: { slots: 3, level: 3 },
+      13: { slots: 3, level: 3 },
+      14: { slots: 3, level: 3 },
+      15: { slots: 3, level: 3 },
+      16: { slots: 3, level: 3 },
+      17: { slots: 4, level: 3 },
+      18: { slots: 4, level: 3 },
+      19: { slots: 4, level: 3 },
+      20: { slots: 4, level: 3 }
+    },
+    progression: {
+      sentinel: {
+        label: "ME5E.SentinelProgression",
+        divisor: 1 // counts fully toward total slot math; unique table anyway
+      }
+    }
+  };
+ 
+}); 
 
 
+Hooks.once("ready", () => {
+  CONFIG.DND5E.spellcasting.spell.progression.vanguard = {
+    label: "ME5E.VanguardProgression",
+    divisor: 1
+  };
+  
+  CONFIG.DND5E.spellcasting.spell.progression.sentinel = {
+    label: "ME5E.SentinelProgression",
+    divisor: 1
+  };
+  
+  CONFIG.DND5E.spellcasting.spell.progression.biotic = {
+    label: "ME5E.AdeptProgression",
+    divisor: 1
+  };
 });
-/* const prep = dnd5e.documents.Actor5e.prototype.prepareBaseData
-function extendActorData() {
-	const health = this.system.attributes.hp;
-	
-	if (this.type === "npc" || this.type === "character") {
-		health["shields"] = health["shields"] || 0;
-		health["shieldsMax"] = health["shieldsMax"] || 0;
-		health["shieldsRegen"] = health["shieldsRegen"] || 0;
-	}
-
-
-    return prep.call(this);
-} */
-
-/*
-Hooks.on('renderActorSheet', (app, html, data) => {
-    const healthdiv = html
-        .find('div.meter-group').first();
-    const flags = data.actor.flags.me5e || {};
-    const pct = flags.shields / flags.shieldsMax * 100;
-    healthdiv.before(`
-                        <div class="meter-group">
-                            <div class="label roboto-condensed-upper">
-                                <span>Shields</span>
-                                <a class="config-button" data-action="hitPoints" data-tooltip="Configure Shields"
-                                   aria-label="Configure Shields">
-                                    <i class="fas fa-cog"></i>
-                                </a>
-                            </div>
-                            <div class="meter sectioned hit-points">
-                                <div class="progress hit-points"
-                                     role="meter" aria-valuemin="0" aria-valuenow="${flags.shields ?? 0}"
-                                     aria-valuemax="${flags.shieldsMax ?? 0}" style="--bar-percentage: ${pct ?? 0}%;">
-                                    <div class="label">
-                                        <span class="value">${flags.shields ?? 0}</span>
-                                        <span class="separator">&sol;</span>
-                                        <span class="max">${flags.shieldsMax ?? 0}</span>
-                                    </div>
-                                    <input type="text" name="flags.me5e.shields" data-dtype="Number"
-                                           placeholder="0" value="${flags.shields ?? 0}" hidden>
-                                </div>
-                            </div>
-                        </div>
-    `);
-
-})
-*/
-/*
-Hooks.on('renderActorSheet', (app, html, data) => {
-    const healthdiv = html
-        .find('header.sheet-header')
-        .find('ul.attributes.flexrow');
-    const flags = data.actor.flags.me5e || {};
-    healthdiv.prepend(`
-		  		<li class="attribute shields">
-                    <h4 class="attribute-name box-title">Shields</h4>
-                    <div class="attribute-value multiple">
-                        <input name="flags.me5e.shields" type="text" value="${flags.shields ?? 0}" data-dtype="Number" placeholder="5"/>
-                        <span class="sep"> / </span>
-                        <input name="flags.me5e.shieldsMax" type="text" value="${flags.shieldsMax ?? 0}" data-dtype="Number" placeholder="5"/>
-                    </div>
-                    <footer class="attribute-footer">
-                        <input name="flags.me5e.shieldsRegen" type="text" class="shieldsRegen" placeholder="Shield Regen." value="${flags.shieldsRegen ?? 0}" data-dtype="Number"/>
-                    </footer>
-                </li>
-	  `);
-
-
-    const counters = html.find('div.counters');
-    counters.append(`
-	<div class="counter flexrow indoctrination">
-    <h4> Indoctrination </h4>
-    <div class="counter-value">
-      <input type="text" name="flags.me5e.indoctrination" placeholder="0" value="${
-          flags.indoctrination ?? 0
-      }" data-dtype="Number"/>
-    </div>
-	</div>
-	
-	`);
-});
-
-*/
